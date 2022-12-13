@@ -31,7 +31,7 @@ var reverseListRecursively = function (head) {
     return newHead;
 };
 
-// 1. Simplest input: 1:>2:empty
+// 1. Simplest input: None or 1 head node. If they pass an empty list or a list of 1, then return head.
 // 2. Example/visualize:
 // 3. Relate hard cases to simpler cases:
 // 4. Generalize the pattern:
