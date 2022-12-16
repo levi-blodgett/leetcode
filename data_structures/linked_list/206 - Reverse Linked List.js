@@ -30,9 +30,3 @@ var reverseListRecursively = function (head) {
     head.next = null;
     return newHead;
 };
-
-// 1. Simplest input: None or 1 head node. If they pass an empty list or a list of 1, then return head.
-// 2. Example/visualize:
-// 3. Relate hard cases to simpler cases:
-// 4. Generalize the pattern:
-// 5. Write code by combining recursive pattern with the base case: if list.length === 1, return list; else
