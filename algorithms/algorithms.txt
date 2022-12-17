@@ -1,0 +1,73 @@
+BFS (breadth-first search): an algorithm that searches through all nodes connected to some starting node in a graph. Similar to DFS. Consider it like water spreading through a network of pipes - it will spread out all at once. Can find shortest paths in an unweighted graph.
+
+Binary search tree: a tree that maintains the following property: for each node, all nodes in its left subtree have smaller (or equal) values, and all nodes in its right subtree have larger values. Useful when balanced to have height O(log n), since you can find any element in O(height).
+
+Binary search: suppose you’re trying to find an element x in a sorted array. If x is less than the middle element, you know that x is in the first half of the array. Otherwise, x is in the second half. Repeat until you find x.
+
+Bitwise operations: anything involving binary numbers and operations (AND, OR, XOR, NOT, and more). Usually involves various tricks and/or properties of these operations or of binary itself.
+
+Brute force: trying all possibilities for the answer (for example, if you’re tasked with predicting who would win in a game, you could try iterating through every possible move sequence to find out whose win is forced).
+
+Combinatorics/probability: combinatorics is a subset of math that focuses on counting and techniques for counting (for example, counting the number of arrangements of people on a line where people of similar eye color must be together). You know what probability is - the hard part is learning to manipulate it.
+
+Convex hull: imagine a set of tacks on a wall. If you were to wrap a rubber band around the whole set, it would form a convex polygon around the “outer layer” of tacks. This polygon is the convex hull, and there exist many algorithms capable of finding it.
+
+DFS (depth-first search): an algorithm that searches through all nodes connected to some starting node in a graph. Similar to BFS. Consider it like the path you would take while trying to find your way out of a maze (with the right-hand rule). Cannot find shortest paths in any form of graph.
+
+Divide and conquer: a general strategy that often behaves like this: imagine you’re solving some problem on an array. Split the array into halves and solve the problem independently (and recursively) for the two halves. Then, use the answers for the two halves to figure out the answer for the full array. Think mergesort, if you know that.
+
+In general, you divide the task into smaller parts, conquer those parts, then merge the parts together to build up to the full solution. Similar to dynamic programming, but there’s no repetition of states.
+
+Dynamic programming: a general problem solving mindset, where you eliminate useless information and use the answers for smaller versions of the task to build up to larger answers and eventually the full answer.
+
+Fast Fourier transform: in this context, it’s an algorithm that can multiply two n-degree polynomials in O(n log n) (and probably does more than that, I admittedly don’t know too much about it).
+
+Fenwick/segment tree: two distinct data structures that work different ways but achieve a similar purpose: handling range queries quickly. For example, they can allow for quickly finding the sum of elements on some range [l, r] and quickly adding a value to any element.
+
+Game theory: a set of rules/properties involving games (such as nim) and how to determine the winner of a game when both players play optimally.
+
+Greedy: always making the immediately best decision, with no regard for how that decision will affect the future.
+
+Hashmap: a data structure that uses hashing to map keys to values and allow for quick assignment (map[key] = value) and queries (get map[key]).
+
+Hashset: a data structure that uses hashing to maintain a list of elements and: insert any element, ensure that no element is in the set more than once, and check if an element is in the set. Doesn’t store its elements in sorted order.
+
+Knuth-Morris-Pratt (KMP): an algorithm that finds all occurrences of a pattern string p in a text string t, in O(length of s + length of t).
+
+Linked list: a type of data structure that stores an array as a collection of nodes, with each node containing a value and a pointer to the sequentially next node (and possibly a pointer to the previous node).
+
+Lowest common ancestor: for two nodes in a tree, the lowest common ancestor of the two nodes is the lowest node in the tree that’s an ancestor of both nodes. Useful for various things, such as breaking an arbitrary path into two entirely vertical paths (all up or all down).
+
+Max flow: complicated. See resource (to be added).
+
+Minimum spanning tree: in a graph, it’s a tree with the minimum possible sum of edge weights that spans (connects) the whole graph.
+
+Modular arithmetic: any arithmetic where each value is to be computed modulo m, for some m. For addition, subtraction, and multiplication, the only necessary action is to take each intermediate value mod m, but other operations like division and sqrt can be much more complicated.
+
+Prefix sums: storing in an array, for each i, the sum of the elements 0..i, which can be computed recursively since the sum of the elements 0..i is the sum of the elements 0..(i - 1) plus the value of element i. Very useful for subarray problems.
+
+Prime factorization: any of a number of algorithms devoted to finding the prime factor representation of a number (fundamental theorem of arithmetic).
+
+Queue: a data structure that supports pushing an element to the back and removing an element from the front. Think of an actual queue (line) for something like a restaurant: the people who are first to arrive are the first to be served, and people arrive at the back of the line.
+
+Recursion: when a function calls itself (generally with different parameters), it’s called recursive. Using recursion is making use of functions that call themselves and adapting to the mindset that allows you to understand those functions.
+
+Shortest paths: in a(n un)weighted graph, the shortest path from one node to another is the path with the minimum total sum of edge weights. Various algorithms can compute shortest paths, such as Dijkstra’s, Bellman-Ford, or Floyd-Warshall.
+
+Sorting: ordering a set of elements in a list from smallest to largest (or however you would like to order them). Every programming language has a library function that handles this for you.
+
+Sqrt decomposition: a pair (set?) of techniques that involve O(n sqrt n) complexities. The first technique involves breaking an array into O(sqrt n) blocks and solving each block independently, using the fact that each block is size O(sqrt n). The second technique involves combining a solution with complexity O(n^2 / k) and another solution with complexity O(n * k) and setting k = sqrt(n).
+
+Stack: a data structure that supports pushing an element to the front and removing an element from the front. Think of an actual stack of papers: papers are added to the top, and the paper at the top is likely to be chosen first. Useful for various other algorithms, such as the very broad “monotonic stack”.
+
+String hashing: efficiently compressing a string into a much smaller amount of information (for example, a number) that can be compared very quickly. If two strings have different hashes, they are guaranteed to be different, and if their hashes are the same, they are likely to be the same. Useful when combined with binary search to lexicographically compare two strings, and also capable of simulating many other popular string algorithms.
+
+Strongly connected components: two nodes in a directed graph are strongly connected if both can reach the other. A strongly connected component is a maximal group of nodes that are all strongly connected (maximal = no other node can be added). If all strongly connected components are compressed into single nodes, the resulting compressed graph is acyclic (otherwise the cycle would form a component), which can be useful.
+
+Topological sort: an ordering of a directed graph’s nodes such that no edge leads from a node later in the order to an earlier node. Think topology - each node is assigned a layer, and each edge must not go down a layer. Useful for dynamic programming on directed acyclic graphs.
+
+Trie: complicated. See resource (to be added).
+
+Two pointers: suppose you’re trying to find two elements that sum to x in a sorted array. As you increase the value of the first element (sweeping right), the value of [x - first element] (aka the desired second element) will only decrease, meaning that you can rule out any candidate second elements that you’ve already checked (and sweep left).
+
+Union find: a graph data structure that allows for fast insertion of edges and fast checking if two nodes are connected to each other.
