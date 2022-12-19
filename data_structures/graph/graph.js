@@ -1,4 +1,4 @@
-// A data structure that consists of a finite set of vertices (or nodes) and a set of edges connecting these vertices.
+// A data structure that consists of a finite set of nodes and a set of edges connecting these nodes.
 // Can be represented using an object or an array.
 
 // EXAMPLE
@@ -18,10 +18,10 @@ let graph = {
 
 // The same graph using an adjacency matrix (array):
 graph = [
-    [0, 1, 1, 1],
+    [0, 1, 1, 0],
     [1, 0, 0, 1],
     [1, 0, 0, 1],
-    [1, 1, 1, 0]
+    [0, 1, 1, 0]
 ];
 
 // The rows and columns of the matrix represent the nodes of the graph, and the values in the matrix represent the edges between the nodes.

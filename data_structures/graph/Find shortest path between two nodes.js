@@ -1,6 +1,7 @@
 // graph, queue, set, and breadth-first search
 
-const graph = {
+// init graph given
+let graph = {
     a: ['b', 'c'],
     b: ['a', 'c', 'd'],
     c: ['a', 'b', 'd'],
@@ -24,6 +25,7 @@ function findShortestPath(graph, start, end) {
 
         // If the node is the end node, return the path
         if (node === end) {
+            console.log(queue);
             return path;
         }
 
@@ -40,8 +42,12 @@ function findShortestPath(graph, start, end) {
     return null;
 }
 
+// Find the shortest path from 'a' to 'd'
+console.log(findShortestPath(graph, 'a', 'd')); // ['a', 'b', 'd']
+
+// Set the graph to not have a path from 'a' to 'd'
+graph.b.pop();
+graph.c.pop();
 
 // Find the shortest path from 'a' to 'd'
-const shortestPath = findShortestPath(graph, 'a', 'd');
-
-console.log(shortestPath); // ['a', 'b', 'd']
+console.log(findShortestPath(graph, 'a', 'd')); // null
