@@ -22,7 +22,7 @@ console.log(array); // [4, 5, 6, 7]
 [4, 5, 6, 7].reverse(); // [7, 6, 5, 4]
 [4, 5, 6, 7].unshift(3); // [3, 4, 5, 6, 7]
 [4, 5, 6, 7].includes(6); // true
-[4, 5, 6, 7].map(item => 2 * item); // [8, 10, 12 , 14]
+[4, 5, 6, 7].map(item => 2 * item); // [8, 10, 12, 14]
 [4, 5, 6, 7].filter(item => item > 5); // [6, 7]
 [4, 5, 6, 7].find(item => item > 5); // 6 (first match)
 [4, 5, 6, 7].every(item => item > 0); // true
