@@ -6,7 +6,7 @@ let graph = {
     Seattle: ['Sedro_Woolley', 'Vancouver', 'Anchorage'],
     Sedro_Woolley: ['Seattle', 'Anchorage'],
     Vancouver: ['Seattle', 'Anchorage'],
-    Anchorage: ['Seattle', 'Sedro_Woolley', 'Vancouver']
+    Anchorage: ['Sedro_Woolley', 'Vancouver']
 };
 
 //     Graph visualized as:
