@@ -7,7 +7,7 @@ console.log(string); // 'HELLO'
 
 // Example methods:
 "Hello".charAt(4); // 'o'
-"Hello".concat("", "world"); // 'Hello world'
+"Hello".concat("", " world"); // 'Hello world'
 "Hello".startsWith("H"); // true
 "Hello".endsWith("o"); // true
 "Hello".includes("x"); // false
