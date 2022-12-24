@@ -3,7 +3,7 @@
 
 // EXAMPLE
 let graph = {
-    Seattle: ['Sedro_Woolley', 'Vancouver', 'Anchorage'],
+    Seattle: ['Sedro_Woolley', 'Vancouver'],
     Sedro_Woolley: ['Seattle', 'Anchorage'],
     Vancouver: ['Seattle', 'Anchorage'],
     Anchorage: ['Sedro_Woolley', 'Vancouver']

@@ -1,6 +1,7 @@
 // A data structure that stores a collection of values
 // A hashset does not maintain the order of its elements and does not allow duplicate values.
 // Faster than arrays at finding out if an element is contained.
+// Faster at inserting and retrieving values than a treeset
 
 // EXAMPLE
 
