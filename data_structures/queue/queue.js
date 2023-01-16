@@ -1,5 +1,4 @@
 // A linear data structure that follows the first-in, first-out (FIFO) principle.
-// FIFO means the elements added to the queue are added to the back, and the elements removed from the queue are removed from the front.
 // To implement a queue, use an array or an object with a push() method and a shift() method.
 
 // EXAMPLE
