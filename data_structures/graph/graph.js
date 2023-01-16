@@ -4,23 +4,23 @@
 // EXAMPLE
 let graph = {
     Seattle: ['Sedro_Woolley', 'Vancouver'],
-    Sedro_Woolley: ['Seattle', 'Anchorage'],
-    Vancouver: ['Seattle', 'Anchorage'],
+    Sedro_Woolley: ['Seattle', 'Vancouver', 'Anchorage'],
+    Vancouver: ['Seattle', 'Sedro_Woolley', 'Anchorage'],
     Anchorage: ['Sedro_Woolley', 'Vancouver']
 };
 
 //     Graph visualized as:
-//           Seattle
-//            /   \
-// Sedro_Woolley Vancouver
-//            \   /
-//          Anchorage
+//             Seattle
+//            /      \
+// Sedro_Woolley -- Vancouver
+//            \      /
+//            Anchorage
 
 // The same graph using an adjacency matrix (array):
 graph = [
     [0, 1, 1, 0],
-    [1, 0, 0, 1],
-    [1, 0, 0, 1],
+    [1, 0, 1, 1],
+    [1, 1, 0, 1],
     [0, 1, 1, 0]
 ];
 
