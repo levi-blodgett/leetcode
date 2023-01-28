@@ -3,24 +3,25 @@
 // EXAMPLE
 
 // Initialize an empty stack
-const stack = [];
+const stack = new Stack()
+const array_stack = [];
 
 // Push three items onto the stack
-stack.push(1);
-stack.push(2);
-stack.push(3);
+array_stack.push(1);
+array_stack.push(2);
+array_stack.push(3);
 
 // The stack now contains [1, 2, 3]
-console.log(stack);
+console.log(array_stack);
 
 // Retrieve the last item from the stack
-const item1 = stack.pop(); // item1 is 3
+const item1 = array_stack.pop(); // item1 is 3
 
 // The stack now contains [1, 2]
-console.log(stack);
+console.log(array_stack);
 
 // Retrieve the last item from the stack again
-const item2 = stack.pop(); // item2 is 2
+const item2 = array_stack.pop(); // item2 is 2
 
 // The stack now contains [1]
-console.log(stack);
+console.log(array_stack);
